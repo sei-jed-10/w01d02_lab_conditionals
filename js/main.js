@@ -17,4 +17,20 @@ The following numbers represent each input
  Start by writing a Pseudocode to ensure you have your logic right before writing anycode.
 */
 
-let userInput = prompt('Enter a number: 1 - Paper, 2 - Scissor, 3 - Rock')
+let userInput = prompt('Enter a number: 1 - Paper, 2 - Scissor, 3 - Rock');
+let computerNum = Math.floor(Math.random() * 3) + 1;
+
+console.log(userInput);
+console.log(typeof userInput);
+console.log(computerNum);
+
+if(userInput == computerNum){
+    console.log(" Tie ");
+}
+else if((userInput == 1 && computerNum == 2) || (userInput == 2 && computerNum == 3) || (userInput == 3 && computerNum == 1)){
+    console.log(" Computer Wins! ");
+}
+else if((userInput == 2 && computerNum == 1) || (userInput == 3 && computerNum == 2) || (userInput == 1 && computerNum == 3)){
+    console.log(" User Wins! ");
+}
+
