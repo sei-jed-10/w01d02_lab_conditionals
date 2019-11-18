@@ -1,20 +1,35 @@
-/*
- Lets make a game of Rock paper scissor.
- +------+
-  Rules
- +------+
-The following numbers represent each input
- 1 - Paper
- 2 - Scissors
- 3 - Rock
- i.e. 1 means paper
+let computerNum = Math.floor(Math.random() * 3) + 1;
+var  player = prompt("lets play 1-Paper, 2-Scissors, 3-Rock");
+ 
+console.log("Player: ",player);
+console.log("computers Play : ",computerNum);
 
- If Rock and paper, Rock wins
- If Rock and Scissor, Rock wins
- If Paper and Scissor, Scissor wins
- If Paper and Rock, Rock wins
+ if(player === computerNum) {
+   console.log("computer choice is:"+computerNum+" and your choice is:"+player);
+   console.log("match draw"); 
+ }
 
- Start by writing a Pseudocode to ensure you have your logic right before writing anycode.
-*/
+ else {
+   if((computerNum == 1 && player == 2) || (computerNum == 2 && player == 1)){
+     console.log("computer choice is:"+computerNum+" and your choice is:"+player);
+     console.log("Scissors wins");
+ }
 
-let userInput = prompt('Enter a number: 1 - Paper, 2 - Scissor, 3 - Rock')
+ else if(  (computerNum == 2 && player == 3) ||(computerNum == 3 && player == 2)) 
+ {
+   console.log("computer choice is:"+computerNum+" and your choice is:"+player);
+   console.log("Rock wins");
+ }
+
+ else if((computerNum == 1 && player == 3) || (computerNum == 3 && player == 1)) 
+ {
+   console.log("computer choice is:"+computerNum+" and your choice is:"+player);
+   console.log("Paper wins");
+ }
+}
+
+
+
+
+ 
+
