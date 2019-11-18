@@ -18,3 +18,29 @@ The following numbers represent each input
 */
 
 let userInput = prompt('Enter a number: 1 - Paper, 2 - Scissor, 3 - Rock')
+let computerNum = Math.floor(Math.random()* 3) + 1;
+
+//if computerNum === userInput --> it's a tye
+if (computerNum == userInput){
+
+    alert("It's a tie!");
+}
+else if(computerNum == 3 && userInput == 1 || computerNum == 1 && userInput == 3){
+
+    alert("Paper WINS !");
+
+}
+else if(computerNum == 3 && userInput == 2 || computerNum == 2 && userInput == 3){
+
+    alert("Paper WINS !");
+
+}
+else if(computerNum == 1 && userInput == 2 || computerNum == 2 && userInput == 1){
+
+    alert("Scissors WINS !");
+
+}
+else{
+    
+    alert("invalid number");
+}
