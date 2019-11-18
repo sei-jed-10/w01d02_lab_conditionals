@@ -35,6 +35,6 @@ if ((userInput == 3 && computerNum == 2) || (userInput == 2 && computerNum == 3)
 if ((userInput == 1 && computerNum == 2) || (userInput == 2 && computerNum == 1)){
     console.log("Scissor wins");
 }
-if ((userInput == 1 && computerNum == 3) || (userInput == 3 && computerNum == 1)){
+/*if ((userInput == 1 && computerNum == 3) || (userInput == 3 && computerNum == 1)){
     console.log("Rock wins");
-}
+}*/
