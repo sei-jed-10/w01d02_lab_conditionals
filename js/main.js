@@ -16,3 +16,5 @@ The following numbers represent each input
 
  Start by writing a Pseudocode to ensure you have your logic right before writing anycode.
 */
+
+let userInput = prompt('Enter a number: 1 - Paper, 2 - Scissor, 3 - Rock')
