@@ -18,3 +18,24 @@ The following numbers represent each input
 */
 
 let userInput = prompt('Enter a number: 1 - Paper, 2 - Scissor, 3 - Rock')
+let computerNum = Math.floor(Math.random() * 3) + 1;
+console.log("compter: ",computerNum);
+console.log("compter: ", userInput);
+
+
+if (userInput == computerNum) 
+{
+    console.log("tie")
+}
+if( (userInput == 1 && computerNum == 2) || (userInput == 2 && computerNum == 1)) 
+{
+    console.log("Scissor wins")
+}
+if ((userInput == 1 && computerNum == 3) || (userInput == 3 && computerNum == 1))
+{
+    console.log("paper wins")
+}
+if ((userInput == 2 && computerNum == 3) || (userInput == 3 && computerNum == 2))
+{
+    console.log("rock wins")
+}
