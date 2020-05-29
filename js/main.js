@@ -18,3 +18,30 @@ The following numbers represent each input
 */
 
 let userInput = prompt('Enter a number: 1 - Paper, 2 - Scissor, 3 - Rock')
+let cpuNum = Math.floor(Math.random() * 3) + 1; // Generates a random number but makes it whole and ONLY in between 1-3.
+
+
+if(userInput == cpuNum )
+{
+    console.log("It is a tie.")
+}
+else if(userInput == 3 && cpuNum == 1 || userInput == 1 && cpuNum == 1)
+{
+    console.log("CPU Wins.")
+}
+else if(userInput == 3 && cpuNum == 2 || userInput == 2 && cpuNum == 3)
+{
+    console.log("You Win!")
+}
+else if(userInput == 1 && cpuNum == 2 || userInput == 2 && cpuNum == 1)
+{
+    console.log("CPU Wins.")
+}
+else if (userInput == 1 && cpuNum == 3 || userInput == 3 && cpuNum == 1)
+{
+    console.log("You Win!")
+}
+else
+{
+    console.log("Wrong Input.")
+}
